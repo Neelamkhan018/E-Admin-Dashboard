@@ -1,0 +1,32 @@
+<div class="d-flex min-vh-100">
+  <!-- Sidebar -->
+  <nav class="sidebar bg-white shadow-sm d-flex flex-column p-3" style="width: 240px;">
+    <div class="text-center mb-4">
+      <div class="logo-circle mx-auto mb-2">
+        <span class="logo-text">EA</span>
+      </div>
+      <h5 class="fw-bold mb-0" style="color:#7c3aed;">E-Admin</h5>
+      <small class="text-muted">Dashboard</small>
+    </div>
+    <ul class="nav nav-pills flex-column gap-2">
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/" style="background: linear-gradient(90deg, #a78bfa 0%, #7c3aed 100%); color: #fff;">
+          <i class="bi bi-box-seam me-2"></i> Products
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/add" style="color: #7c3aed;">
+          <i class="bi bi-plus-circle me-2"></i> Add Product
+        </a>
+      </li>
+    </ul>
+    <div class="mt-auto pt-4 text-center">
+      <small class="text-muted">&copy; 2024 E-Admin</small>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="flex-grow-1">
+    <router-outlet></router-outlet>
+  </div>
+</div>
